@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(217, 217, 252);
+}
+
+.p-main{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(185, 185, 249);
+    border-radius: 20px;
+    width: 600px;
+}
+
+section{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    top: 220px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px black;
+    width:700px;
+    height: 150px;
+}
+
+section button{
+    color: black;
+    background-color: white;
+}
+
+section button:hover{
+    color: white;
+    background-color: black;
+}
+
+#rodape{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 600px;
+    color: black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes utilizando o JQuery</title>
+    <link rel="stylesheet" href="/_css/style.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //Alterando texto
+            $(".alterar").click(function(){
+                $("h1").html("Você alterou o texto!");
+            })
+
+            //Ocultando texto
+            $(".ocultar").click(function(){
+                $("h1").slideUp("slow");
+            })
+
+            //Exibindo novamente
+            $(".exibir").click(function(){
+                $("h1").slideDown("slow");
+            })
+        })
+    </script>
+</head>
+<body>
+    <p class="p-main">&#9888;&#65039; Essa atividade foi feita utilizando as seguintes ferramentas: <strong>HTML, CSS JQUERY. &#9888;&#65039;</strong><p>
+    <section>
+        <div class="titulo">
+            <h1>Utilizando funções no JQuery.</h1>
+        </div>
+        <div>
+            <button class="alterar">Clique aqui e altere o título</button>
+            <button class="ocultar">Clique aqui e faça sumir o título</button>
+            <button class="exibir">Clique aqui e exiba novamente o título</button>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Copyright&copy; Maria Eduarda Araújo</p>
+    </footer>
+</body>
+</html>
