@@ -1,0 +1,43 @@
+@charset "UTF=8";
+
+body{
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(210, 253, 238);
+}
+
+h1{
+    font-size: 30px;
+    margin: auto;
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+
+button{
+    position: relative;
+    top: 55px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    color: white;
+    background-color: red;
+}
+
+section{
+    position: relative;
+    top: 70px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+}
