@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usando JQuery Animate</title>
+    <title>Testes utilizando o JQuery</title>
     <link rel="stylesheet" href="/_css/style.css">
     <script src="jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function(){
-           $(".animar").click(function(){
-                $("#secao").animate({width: '600px', height: '300px', opacity: '0.7'});
+
+            //Alterando texto
+            $(".alterar").click(function(){
+                $("h1").html("Você alterou o texto!");
+            })
+
+            //Ocultando texto
+            $(".ocultar").click(function(){
+                $("h1").slideUp("slow");
+            })
+
+            //Exibindo novamente
+            $(".exibir").click(function(){
+                $("h1").slideDown("slow");
+            })
         })
-        $(".voltar").click(function(){
-            $("#secao").animate({width: '100px', height: '100px', opacity: '1.0'})
-        })
-    })
     </script>
 </head>
 <body>
-    <h1 id="titulo">Usando animate no JQUery</h1>
-    <div class="botoes">
-        <button class="animar">Clique aqui para animar</button>
-        <button class="voltar">Clique aqui para voltar</button>
-    </div>
-        <section id="secao"></section>
+    <p class="p-main">&#9888;&#65039; Essa atividade foi feita utilizando as seguintes ferramentas: <strong>HTML, CSS JQUERY. &#9888;&#65039;</strong><p>
+    <section>
+        <div class="titulo">
+            <h1>Utilizando funções no JQuery.</h1>
+        </div>
+        <div>
+            <button class="alterar">Clique aqui e altere o título</button>
+            <button class="ocultar">Clique aqui e faça sumir o título</button>
+            <button class="exibir">Clique aqui e exiba novamente o título</button>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Copyright&copy; Maria Eduarda Araújo</p>
+    </footer>
 </body>
 </html>
